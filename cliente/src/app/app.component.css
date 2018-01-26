@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    position: relative;
+    /*margin: 0 -25px;*/
+    font-size: 40px;
+    background: #0088AA;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px #1A5D6E;
+    box-shadow: 0 0 10px #AAA;
+}
+
+h1:after, h1:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #1A5D6E transparent;
+}
+
+h1:before {
+    border-width: 25px 0 0 25px;
+    left: 0;
+}
+
+h1:after {
+    border-width: 25px 25px 0 0;
+    right: 0;
+}

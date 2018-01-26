@@ -1,0 +1,23 @@
+<!--<div align='left' *ngFor="let pokemon of _pokemons">
+  <h3>{{pokemon['en-name']}}</h3>
+  <img [src]="pokemon['l-image']">
+  <label>Name = {{pokemon['en-name']}}</label>
+  <input type="text" [value]="pokemon['cp']">
+  <input type="text" [value]="pokemon['hp']">
+  <input type="text" [value]="pokemon['attack']">
+  <input type="text" [value]="pokemon['en-name']">
+</div>-->
+
+<div>
+  <ul *ngFor="let pokemon of _pokemons">
+    <li>
+      <img [src]="pokemon['l-image']"/>
+      <h3>{{pokemon['en-name']}}</h3>
+      <p>ID: {{pokemon['id']}}</p>
+      <p>CP: {{pokemon['cp']}}</p>
+      <p>HP: {{pokemon['hp']}}</p>
+      <p>ATK: {{pokemon['attack']}}</p>
+      <p>DEF: {{pokemon['defense']}}</p>
+    </li>
+  </ul>
+</div>
