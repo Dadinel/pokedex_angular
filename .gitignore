@@ -8,13 +8,7 @@
 
 # dependencies
 /node_modules
-/cliente/node_modules
-./cliente/node_modules
-.cliente/node_modules
-
 /client/node_modules
-./client/node_modules
-.client/node_modules
 
 # IDEs and editors
 /.idea
