@@ -13,11 +13,15 @@
     <li>
       <img [src]="pokemon['l-image']"/>
       <h3>{{pokemon['en-name']}}</h3>
-      <p>ID: {{pokemon['id']}}</p>
+      <p>Number: {{pokemon['id']}}</p>
       <p>CP: {{pokemon['cp']}}</p>
       <p>HP: {{pokemon['hp']}}</p>
-      <p>ATK: {{pokemon['attack']}}</p>
-      <p>DEF: {{pokemon['defense']}}</p>
+      <p>Attack: {{pokemon['attack']}}</p>
+      <p>Defense: {{pokemon['defense']}}</p>
+      <p>Type 1: {{pokemon['type1']}}</p>
+      <p>Type 2: {{pokemon['type2']}}</p>
+      <p>Generation: {{pokemon['generation']}}</p>
+      <p>Legend: {{pokemon['legend'] == '1'}}</p>
     </li>
   </ul>
 </div>
