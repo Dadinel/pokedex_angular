@@ -15,12 +15,16 @@ export class PokedexService {
         //return this._httpClient.get(this._url, { headers: new HttpHeader().set('Origin' , '*') });
         return this._httpClient
             .get(this._url)
-            .map(res => res);
+            .map((res: Array<Object>) => {
+                return res;
+            });
     }
 
     public getPokemon(id: string) {
         return this._httpClient
             .get(this._url + '?id=' + id)
-            .map(res => res);
+            .map((res: Array<Object>) => {
+                return res;
+            });
     }
 }
