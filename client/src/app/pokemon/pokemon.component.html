@@ -19,7 +19,7 @@
       <p>Attack: {{pokemon['attack']}}</p>
       <p>Defense: {{pokemon['defense']}}</p>
       <p>Type 1: {{pokemon['type1']}}</p>
-      <p>Type 2: {{pokemon['type2']}}</p>
+      <p *ngIf="pokemon['type2'] !== ''">Type 2: {{pokemon['type2']}}</p>
       <p>Generation: {{pokemon['generation']}}</p>
       <p>Legend: {{pokemon['legend'] == '1'}}</p>
     </li>
